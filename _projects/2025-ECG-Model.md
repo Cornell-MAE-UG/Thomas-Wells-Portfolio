@@ -32,7 +32,7 @@ As another exercise and additional deliverable for the class project, I made bod
 ![Single Heartbeat]({{ "/assets/images/ECG Model/Frequency_Response.png" | relative_url }}){: .inline-image-l}
 {% endcomment %}
 
-```MATLAB
+```python
     some code = 10;
     plot();
 
