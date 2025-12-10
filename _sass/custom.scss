@@ -109,9 +109,11 @@ footer {
 }
 
 .center-image {
-  display: block;
-  width: 800px;
+  max-width: 400px;
   margin: 0px 25px 15px 25px;
+  vertical-align: top;
+  float: left;
+  margin-left: 0;
 
 }
 

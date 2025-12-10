@@ -6,7 +6,7 @@ technologies: [MATLAB]
 image: /assets/images/ECG Model/ECG_Thumbnail.png
 ---
 
-V2
+V3
 
 In my Junior Fall, I took a class on system dynamics. The course covered major topics such as open and close-looped systems, feedback control, laplace transforms, state space models, and PID control.
 
@@ -14,7 +14,7 @@ The class culminaed in a final group project, where we were tasked with choosing
 
 We quickly pivoted to modeling the heart alone, focusing on trying to emulate a standard ECG signal. To do so we performed extensive research, and eventually landed on a couple academic papers that proposed models of varying complexity. We eventually landed on two models, the established Van der Pol model, and a simpler approximation set out by Omar et al. From here we chose to divide and conquer, and I decided to base my model on the one proposed by Omar et al. as it was much simpler compared to other proposed models. Omar et al. break down the ECG wave into three primary elements, a P-wave, a QRS complex, and a T-wave. In real life, each wave is produced by a different portion of the heart moving, but in the model each wave is described by the same transfer function, just with different parameters. To help me visualize the system, I created a block diagram of the system in google sheets. 
 
-![ECG Block Diagram]({{ "/assets/images/ECG Model/ECG_Block_Diagram.png" | relative_url }}){: .inline-image-l}
+![ECG Block Diagram]({{ "/assets/images/ECG Model/ECG_Block_Diagram.png" | relative_url }}){: .center-image}
 
 After doing so, it was relatively simple to write the given transfer functions and parameters in MATLAB. While some sample parameters were given, details on the input function were lacking, instead loosely described as a "cyclic impulse signal". I chose to interpret this as an impulse input that is sent periodically, and implemented it into the script. The first run on this model produced mixed results. The resulting waveform's amplitude was around 100mV, which is much larger than an ECG signal at around 0.6-0.8 mV. 
 
