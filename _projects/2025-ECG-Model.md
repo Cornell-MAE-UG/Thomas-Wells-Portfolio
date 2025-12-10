@@ -28,7 +28,9 @@ With this success, I expanded the single response to a rhymic heartbeat by imple
 
 As another exercise and additional deliverable for the class project, I made bode plots of the normal system.
 
+%{
 ![Single Heartbeat]({{ "/assets/images/ECG Model/Frequency_Response.png" | relative_url }}){: .inline-image-l}
+%}
 
 ```MATLAB
     some code = 10;
