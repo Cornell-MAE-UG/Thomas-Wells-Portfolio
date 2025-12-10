@@ -16,7 +16,7 @@ We quickly pivoted to modeling the heart alone, focusing on trying to emulate a 
 
 After doing so, it was relatively simple to write the given transfer functions and parameters in MATLAB. While some sample parameters were given, details on the input function were lacking, instead loosely described as a "cyclic impulse signal". I chose to interpret this as an impulse input that is sent periodically, and implemented it into the script. The first run on this model produced mixed results. The resulting waveform's amplitude was around 100mV, which is much larger than an ECG signal at around 0.6-0.8 mV. 
 
-![Inverted Response]({{ "/assets/images/ECG Model/Inverted_Signal.png" | relative_url }}){: .center-image}
+![Inverted Response]({{ "/assets/images/ECG Model/Inverted_Signal.png" | relative_url }}){: .inline-image-l}
 
 This problem was solved in two different ways. First by varying the strength of the impulse given to the system, and also by tuning the values for parameter "k" in the transfer functions, which alters the response gain. It was easier to set a new impulse strength as I only had to change on variable, but it may have been better to individually tune the gains for each transfer function for more control. Nonetheless the results were favorable, and I added another graph that showed the individual contributions of each transfer function.
 
@@ -24,7 +24,7 @@ This problem was solved in two different ways. First by varying the strength of 
 
 With this success, I expanded the single response to a rhymic heartbeat by implementing a repeating impulse signal. With this addition, I decided to model afib, a heart condition that I was diagnosed with as a child, but have since recovered from. The defining characteristics of afib are an irregular heartbeat, and the absence of a P-wave. To simulate the irregular heartbeat, a random delay was added to the cyclic impulse signal. Removing the P-wave was done by simply removing the transfer function that described the P-wave from the overall system. I was happy with the results.
 
-![Single Heartbeat]({{ "/assets/images/ECG Model/Repeat_afib.png" | relative_url }}){: .center-image}
+![Single Heartbeat]({{ "/assets/images/ECG Model/Repeat_afib.png" | relative_url }}){: .inline-image-l}
 
 As another exercise and additional deliverable for the class project, I made bode plots of the normal system.
 
