@@ -56,8 +56,10 @@ Aspiring engineering student with a strong foundation in mechanical design and r
 #### Work Experience
 - **ASML - Mechanical Design Intern**  
   [May, 2025] - [Aug, 2025]  
-  - Responsibility 1  
-  - Responsibility 2  
+  - Designed and prototyped precision storage mechanisms for chip reticle protection, leveraging Siemens NX and DFMA to reduce cost by 40%
+  - Engineered telescoping and rack-and-pinion drive systems optimized for manufacturability and space efficiency
+  - Created Gantt schedules in MS Project to track design dependencies and milestones
+  - Authored detailed technical documentation summarizing design evolution and experimental results
 
 ---
 
