@@ -13,58 +13,57 @@ permalink: /cv/
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
+Aspiring engineering student with a strong foundation in mechanical design and rapid prototyping. Deeply passionate about high precision mechantronics and additive manufacturing.
 
 ---
 
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
-
-- **[High School Name]**  
-  *High School Diploma*  
-  Graduation: [Month, Year]
+  GPA: 3.515/4.0 | Graduation: May, 2025
 
 ---
 
 #### Skills
-- **Software:** Autodesk Fusion 360, SolidWorks, ANSYS  
-- **Programming:** Python, MATLAB  
-- **Tools:** 3D Printing, Laser Cutting  
+- **Software:** Siemens NX, SolidWorks, Autodesk Fusion 360, ANSYS Mechanical, MS Project
+- **Programming:** MATLAV, Python, LaTex  
+- **Tools:** FDM & SLM 3D Printing, CNC Machining, Sheet Metal Fabrication, Laser Cutting  
 
 ---
 
 #### Projects
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+- **Miniature SLM System**:  
+  *Independently designed and manufactured a miniaturized selective laser melting (SLM) system enabling in-situ synchrotron experiments*  
+  - Created modular substrates using wire EDM and dovetail joints to enable rapid experimental setup
+  - Engineered miniature powder hopper and feeder mechanism to automate print layer creation
+  - Achieved 10 nm layer precision using piezoelectric motor actuation
+  - Developed a .NET-based remote interface that reduced cycle time by 80%
+  - Demonstrated multi-layer SLM printing feasibility through successful trials
 
-- **[Project Title]**:  
-  *[Short Description]*  
-  - Key Achievement 1  
-  - Key Achievement 2  
+- **Lightweight Robotic Arm**:  
+  *Spearheaded preliminary development of lightweight robotic arm focusing on design flexibility*  
+  - Employed inverse kinematics to optimize joint layout and minimize mass
+  - Performed FEA on arm segments validating component strength and stiffness
+
+- **Remotely Adjustable Water Gun**:
+  *Designed and fabricated an adjustable water gun sustem used to advance to RoboBoat 2025 Finals*
+  - Designed and optimized custom dynamic O-ring seals and static gaskets in accordance to Parker O-Ring Handbook guidelines
+  - Selected water pump to fufill flow rate requirements with minial current draw
+  - Integrated servo motor to enable autonomous angle control with 0.5 degree precision
 
 ---
 
 #### Work Experience
-- **[Company Name] - Intern**  
-  [Month, Year] - [Month, Year]  
+- **ASML - Mechanical Design Intern**  
+  [May, 2025] - [Aug, 2025]  
   - Responsibility 1  
   - Responsibility 2  
 
 ---
 
-#### Achievements & Certifications
-- [Certification Name], [Issuing Organization], [Year]  
-- [Achievement Name], [Competition/Event], [Year]  
-
----
 
 #### Extracurricular Activities
-- Member of [Club/Organization Name]  
-- Volunteer for [Event/Organization Name]  
+- Hardware Team Lead of [Cornell AutoBoat Project Team]  
 
 ---
 
