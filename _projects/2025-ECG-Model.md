@@ -16,7 +16,7 @@ We quickly pivoted to modeling the heart alone, focusing on trying to emulate a 
 
 After doing so, it was relatively simple to write the given transfer functions and parameters in MATLAB. While some sample parameters were given, details on the input function were lacking, instead loosely described as a "cyclic impulse signal". I chose to interpret this as an impulse input that is sent periodically, and implemented it into the script. The first run on this model produced mixed results. The resulting waveform's amplitude was around 100mV, which is much larger than an ECG signal at around 0.6-0.8 mV. 
 
-![Inverted Response]({{ "/assets/images/ECG Model/Inverted_Signal.png" | relative_url }}){: .inline-image-lr}
+![Inverted Response]({{ "/assets/images/ECG Model/Inverted_Signal.png" | relative_url }}){: .inline-image-l}
 
 This problem was solved in two different ways. First by varying the strength of the impulse given to the system, and also by tuning the values for parameter "k" in the transfer functions, which alters the response gain. It was easier to set a new impulse strength as I only had to change on variable, but it may have been better to individually tune the gains for each transfer function for more control. Nonetheless the results were favorable, and I added another graph that showed the individual contributions of each transfer function.
 
