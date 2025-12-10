@@ -24,11 +24,11 @@ This problem was solved in two different ways. First by varying the strength of 
 
 With this success, I expanded the single response to a rhymic heartbeat by implementing a repeating impulse signal. With this addition, I decided to model afib, a heart condition that I was diagnosed with as a child, but have since recovered from. The defining characteristics of afib are an irregular heartbeat, and the absence of a P-wave. To simulate the irregular heartbeat, a random delay was added to the cyclic impulse signal. Removing the P-wave was done by simply removing the transfer function that described the P-wave from the overall system. I was happy with the results.
 
-![Single Heartbeat]({{ "/assets/images/ECG Model/Repeat_afib.png" | relative_url }}){: .center-image}
+![Single Heartbeat]({{ "/assets/images/ECG Model/Repeat_afib.png" | relative_url }}){: .inline-image-l}
 
 As another exercise and additional deliverable for the class project, I made bode plots of the normal system.
 
-![Single Heartbeat]({{ "/assets/images/ECG Model/Frequency_Response.png" | relative_url }}){: .center-image}
+![Single Heartbeat]({{ "/assets/images/ECG Model/Frequency_Response.png" | relative_url }}){: .inline-image-l}
 
 ```MATLAB
     some code = 10;
