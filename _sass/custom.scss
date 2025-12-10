@@ -109,10 +109,9 @@ footer {
 }
 
 .center-image {
-  float: left;
+  float: none;
   max-width: 800px;
-  margin-left: 0;
-  vertical-align: top;
+  margin: auto;
 
 }
 .inline-image {
