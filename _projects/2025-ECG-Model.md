@@ -6,8 +6,6 @@ technologies: [MATLAB]
 image: /assets/images/ECG Model/ECG_Thumbnail.png
 ---
 
-V6
-
 In my Junior Fall, I took a class on system dynamics. The course covered major topics such as open and close-looped systems, feedback control, laplace transforms, state space models, and PID control.
 
 The class culminaed in a final group project, where we were tasked with choosing a real-life system to study and report on. My group initially chose to study the human heart, focusing on pacemakers. We hoped to create a model of a pacemaker driving a heart suffering a range of heat conditions, but we quickly realized that we may have bit off a bit more than we could chew, especially for a project that needed to be completed in just over a week.
