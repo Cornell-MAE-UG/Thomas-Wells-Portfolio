@@ -8,12 +8,12 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : Your Name
+title                    : Thomas Wells
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : Your Name
-description              : Your Name - Projects and CV 
-baseurl                  : "" # Set this to your repo name 
+subtitle                 : "testing 1 2 3" # site tagline that appears below site title in masthead
+name                     : Thomas Wells
+description              : Thomas Wells - Projects and CV 
+baseurl                  : "Thomas-Wells-Digital-Portfolio" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal
