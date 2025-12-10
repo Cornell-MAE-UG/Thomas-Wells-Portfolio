@@ -6,7 +6,7 @@ technologies: [MATLAB]
 image: /assets/images/ECG Model/ECG_Thumbnail.png
 ---
 
-V1
+V2
 
 In my Junior Fall, I took a class on system dynamics. The course covered major topics such as open and close-looped systems, feedback control, laplace transforms, state space models, and PID control.
 
