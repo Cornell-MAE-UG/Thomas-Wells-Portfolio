@@ -109,11 +109,13 @@ footer {
 }
 
 .center-image {
+  display: block;
   float: none;
-  max-width: 800px;
-  margin: auto;
+  max-width: 1600px;
+  margin-left: 0;
 
 }
+
 .inline-image {
   max-width: 800px;
   margin: 0px 25px 15px 25px;
