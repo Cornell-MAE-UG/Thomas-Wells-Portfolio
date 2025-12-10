@@ -110,21 +110,19 @@ footer {
 
 .center-image {
   display: block;
-  float: none;
-  max-width: 400px;
-  margin-left: 0;
-  margin-right: 10px;
+  width: 800px;
+  margin: 0px 25px 15px 25px;
 
 }
 
 .inline-image {
-  max-width: 800px;
+  max-width: 400px;
   margin: 0px 25px 15px 25px;
   vertical-align: top;
 
   &-l {
     @extend .inline-image;
-    float: none;
+    float: left;
     margin-left: 0;
   }
 
