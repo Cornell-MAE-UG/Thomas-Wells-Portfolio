@@ -13,7 +13,7 @@ title_separator          : "-"
 subtitle                 : "testing 1 2 3" # site tagline that appears below site title in masthead
 name                     : Thomas Wells
 description              : Thomas Wells - Projects and CV 
-baseurl                  : "Thomas-Wells-Digital-Portfolio" # Set this to your repo name 
+baseurl                  : "Thomas-Wells-Portfolio" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal
