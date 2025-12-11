@@ -80,8 +80,8 @@ As another exercise and additional deliverable for the class project, I made bod
     HB_afib = TF2 + TF3;    % For afib 
 
 
-    %% Create periodic ECG model (Equation 13)
-    % For periodic signal, we'll simulate with impulse train input
+    %% Create periodic ECG model (Equation 13 in Omar et al.)
+    % For periodic signal, we will simulate with impulse train input
     % The periodic impulse is represented by: 1/(1-exp(-s/f))
 
     % Time parameters
