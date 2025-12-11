@@ -26,13 +26,28 @@ With that key design decision made, I moved forward with selecting a material fo
 Here is the final CAD model of the redesigned torque wrench, along with a drawing showing all the key dimensions.
 
 ![Torque Wrench CAD]({{ "/assets/images/Torque Wrench/Torque_Wrench_CAD.png" | relative_url }}){: .center-image}
-![Torque Wrench Drawing]({{ "/assets/images/Torque Wrench/Torque_Wrench_Drwaing.png" | relative_url }}){: .center-image}
+![Torque Wrench Drawing]({{ "/assets/images/Torque Wrench/Torque_Wrench_Drawing.png" | relative_url }}){: .center-image}
 
-With the design done, I moved forward with verification using Ansys Mechanical.
-3.	Diagram communicating how loads and boundary conditions were applied to your FEM model.
-4.	Normal strain contours (in the strain gauge direction) from FEM
-5.	Contour plot of maximum principal stress from FEM
-6.	Summarize results from FEM calculation showing maximum normal stress (anywhere), load point deflection, strains at the strain gauge locations
-7.	Torque wrench sensitivity in mV/V using strains from the FEM analysis
+With the design done, I moved forward with verification using Ansys Mechanical. To simulate the wrench under load, I set a zero displacement boundary condition on all faces of the torque wrench. This would ensure that the head would remain stationary like it would in a real life scenario, but would create issues later on. I applied a 25 lbf load on the end of the handle to comply with the 600 in-lbf loading requirement. 
+
+![Torque Wrench Loading]({{ "/assets/images/Torque Wrench/Redesigned_Loading.png" | relative_url }}){: .center-image}
+
+Here are the results of the simulation. 
+
+The deflection at the load point was 0.34 inches, which is larger than the deflection predicted by my MATLAB script of 0.23 inches. This can likely be attributed to the approximations made for the MATLAB script, where the geometry may have been oversimplified.
+
+![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Deflection.png" | relative_url }}){: .center-image}
+
+I faced significant problems with the maximum principle stress. The loading and boundary conditions resulted in a significant stress concentration at the edges of the head. This somewhat makes sense as this is where the area is the smallest. For a future redesign, I would resolve this issue by chaning the material of the head to one with higher strength. 
+
+![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Stress.png" | relative_url }}){: .center-image}
+![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Stress_Concentration.png" | relative_url }}){: .center-image}
+
+The results for strain likewise faced the same issue, where it became concentrated around the edge of the wrench head. However the simulated and predicted values for the normal strain in the direction of the strain gauge were close, 600 vs 521 microstrain. This gives a final strain gauge of sensitivity of 1.04mV/V, just barely in spec.
+
+![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Strain.png" | relative_url }}){: .center-image}
+![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Strain_normal.png" | relative_url }}){: .center-image}
+
+Overall I am happy with my design decisions, and as someone who is not deeply familiar with FEA, this definately re-ignited my interest in the field.
 
 
