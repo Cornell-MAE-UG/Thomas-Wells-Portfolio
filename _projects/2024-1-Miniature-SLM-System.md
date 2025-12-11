@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Miniature Selective Laser Melting System
-description: Design and simulation of a torque wrench
+description: Design and implementation of a SLM 3D Printing System
 technologies: [Fusion 360, MATLAB, CNC Machining, 3D Printing]
 image: /assets/images/SLM/Thumbnail.jpg
 ---
@@ -53,6 +53,9 @@ As discussed, the region for the powder bed is formed by the two strips of glass
 The stoppers themselves were cut from a sheet of stock stainless steel of 0.3mm thickness with a pair of shears, with the thicker stopper formed from three layers of stock folded on top of each other. Unfortunately, during the cutting process the material developed a slight curl on the edges and corners, rendering their practical thickness to be closer to 0.6mm. This has resulted in an empty space forming between the substrate and the glassy carbon in some sections, leaving the metal powder free to fall away instead of staying atop the substrate and forming a powder bed. This problem should be relatively easy to solve, as the stoppers just need to be flattened with a hammer until the proper thickness is reached.
 
 ![SLM Fig 6]({{ "/assets/images/SLM/Fig 6 Marked.jpg" | relative_url }}){: .inline-image-r}
+
+
+
 
 <p><strong>Piezo Mount & Enclosure </strong></p>
 
@@ -158,9 +161,9 @@ A problem that has persisted from prior experiments was the substrate itself def
 
 <p><strong>Conclusion </strong></p>
 The prototype SLM system, despite its shortcomings, has clearly shown its ability to execute its given objective. There are still many things that can and should be improved, so I’ve included a list of the most pressing concerns to conclude this report.
-    1-	Speeding up the connection process between the computer and piezo controller, ideally this should be eliminated entirely
-    2-	The laser control needs to be integrated with the rest of the system
-    3-	The piezo motor needs to be better protected from powders
-    4-	Homing the piezo motor is largely done by sight, having a measured method of achieving this necessary
-    5-	The glassy carbon clamps are clunky to deal with and have caused the untimely demise of two glassy carbon strips. A more streamlined process to mount them should be found
-    6-	The powder bed leveler works, but needs a finalized version
+1-	Speeding up the connection process between the computer and piezo controller, ideally this should be eliminated entirely
+2-	The laser control needs to be integrated with the rest of the system
+3-	The piezo motor needs to be better protected from powders
+4-	Homing the piezo motor is largely done by sight, having a measured method of achieving this necessary
+5-	The glassy carbon clamps are clunky to deal with and have caused the untimely demise of two glassy carbon strips. A more streamlined process to mount them should be found
+6-	The powder bed leveler works, but needs a finalized version
