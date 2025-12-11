@@ -10,6 +10,7 @@ As part of a group project my junior fall, I contributed to a CAD model of a sma
 
 <video controls width="250">
   <source src="/assets/videos/Accordion Explosion.mp4" type="video/mp4" />
+</video>
 
 ![Exploded Accordion]({{ "/assets/images/Accordion/FMD_Accordion.png" | relative_url }}){: .center-image}
 
@@ -28,3 +29,4 @@ And finally here is a render showing the accordion in operation.
 
 <video controls width="250">
   <source src="/assets/videos/Operation.mp4" type="video/mp4" />
+</video>

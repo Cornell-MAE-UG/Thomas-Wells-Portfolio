@@ -3,7 +3,7 @@ layout: project
 title: Torque Wrench Design
 description: Design and simulation of a torque wrench
 technologies: [Fusion 360, MATLAB, Ansys Mechanical]
-image: /assets/images/spaceship-design.jpg
+image: /assets/images/Redesigned_Deflection.png
 ---
 
 As the culmination of my mechanicals of material class in my junior year, we were asked to take an existing design for a torque wrench and redesign it. The requirements were that under a lod of 600 in-lbf:
@@ -46,7 +46,7 @@ I faced significant problems with the maximum principle stress. The loading and 
 The results for strain likewise faced the same issue, where it became concentrated around the edge of the wrench head. However the simulated and predicted values for the normal strain in the direction of the strain gauge were close, 600 vs 521 microstrain. This gives a final strain gauge of sensitivity of 1.04mV/V, just barely in spec.
 
 ![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Strain.png" | relative_url }}){: .center-image}
-![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Strain_normal.png" | relative_url }}){: .center-image}
+![Torque Wrench Deflection]({{ "/assets/images/Torque Wrench/Redesigned_Strain_Normal.png" | relative_url }}){: .center-image}
 
 Overall I am happy with my design decisions, and as someone who is not deeply familiar with FEA, this definately re-ignited my interest in the field.
 
