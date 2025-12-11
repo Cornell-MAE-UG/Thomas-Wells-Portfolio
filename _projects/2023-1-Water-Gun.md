@@ -3,7 +3,7 @@ layout: project
 title: Custom Water Gun
 description: Design and development of a custom water gun for CUAB
 technologies: [Fusion 360, Ansys Mechanical, 3D Printing]
-image: /assets/images/Water Gun/New Watergun Front.jpg
+image: /assets/images/Water Gun/New Watergun Front.png
 ---
 
 
