@@ -20,10 +20,13 @@ And here is it all together.
 
 Here are some close-ups of each component I made
 
-![Exploded Accordion]({{ "/assets/images/Accordion/Bellows.png" | relative_url }}){: .center-image}
-![Exploded Accordion]({{ "/assets/images/Accordion/Bellows_ends.png" | relative_url }}){: .center-image}
-![Exploded Accordion]({{ "/assets/images/Accordion/Keys.png" | relative_url }}){: .center-image}
-![Exploded Accordion]({{ "/assets/images/Accordion/Valves.png" | relative_url }}){: .center-image}
+![Accordion Bellows]({{ "/assets/images/Accordion/Bellows.png" | relative_url }}){: .center-image}
+
+![Accordion Bellows Ends]({{ "/assets/images/Accordion/Bellows_Ends.png" | relative_url }}){: .center-image}
+
+![Accordion Keys]({{ "/assets/images/Accordion/Keys.png" | relative_url }}){: .center-image}
+
+![Accordion Valves]({{ "/assets/images/Accordion/Valves.png" | relative_url }}){: .center-image}
 
 And finally here is a render showing the accordion in operation. 
 
