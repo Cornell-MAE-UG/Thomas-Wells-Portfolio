@@ -3,7 +3,7 @@ layout: project
 title: Custom Water Gun
 description: Design and development of a custom water gun for CUAB
 technologies: [Fusion 360, Ansys Mechanical, 3D Printing]
-image: /assets/images/SLM/Thumbnail.jpg
+image: /assets/images/Water Gun/New Watergun Front.jpg
 ---
 
 
@@ -55,7 +55,7 @@ The lid compresses a cut to length rod of buna n rubber inside a channel set int
 
 The axle originally used a press-fit rotary seal, but it leaked as it did not interface well with the rough FDM printed surface. Instead it is now a custom rotary seal using a 14mm O-ring.
 
-![Waterproofing Top]({{ "/assets/images/Water Gun/Waterproofing Top View.png" | relative_url }}){: .inline-image-l}
+![Waterproofing Top]({{ "/assets/images/Water Gun/Waterprooding Top View.png" | relative_url }}){: .inline-image-l}
 ![Waterproofing Side]({{ "/assets/images/Water Gun/Waterproofing Side View.png" | relative_url }}){: .inline-image-r}
 
 <p><strong>Nozzle Mount FEA </strong></p>
