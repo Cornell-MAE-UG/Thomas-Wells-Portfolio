@@ -375,12 +375,12 @@ With the completion of milestone 3, the team was able to quickly complete milest
 
 <p><strong>Gear Train Design </strong></p>
 
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }}){: .inline-image-l}
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }}){: .inline-image-l}
+
 For the final design, I was in charge of creating the gear train. This involved making the gears and and method of mounting them to the provided robot frame. My main limitation in this process was the budget, I figured I only had around $15-$20 for the entire prototyping process and final product. A single gear off McMaster is at minimum $5, so if I bought all four gears I needed, I would be over budget already. I decided to then pivot to making my own gears by laser cutting them out of acrylic. This saved a lot of money, as for all four gears I only spent around $9. To make the gears, I used Fusion 360's gear generator add-in, and settled on a 3:1 ratio to maximize speed while minimizing the space the gear train would take up. 
 
 After designing the gears, I moved onto the mounting system. Again, my main limitation was the budget as each 3D printed part cost us $1 as a base rate, and an additional $0.4 for each gram the part weighed. Because of that limitation, I decided to make the mounting piece as small as possible to save on cost, but the final cost per part still reached over $2. Furthermore, my design for the mount was flawed, and was not stiff enough. The main portion of the part is essentially a single canteliver beam, with the gear and wheel mounted on the very edge. This meant that when turning, the mounts tended to bend and cause meshing issues between the gears. To alleviate this issue, I thicked the walls in the model and changed the print settings to prioritize stiffness in the horizontal direction. These changes were successful, and the bot moved reliably.
-
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }}){: .inline-image-l}
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }}){: .inline-image-l}
 
 <p><strong>Competiton Day </strong></p>
 
