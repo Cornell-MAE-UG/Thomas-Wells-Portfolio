@@ -6,7 +6,7 @@ technologies: [Fusion 360, MATLAB, Ansys Mechanical]
 image: /assets/images/Torque Wrench/Redesigned_Deflection.png
 ---
 
-As the culmination of my mechanicals of material class in my junior year, we were asked to take an existing design for a torque wrench and redesign it. The requirements were that under a lod of 600 in-lbf:
+As the culmination of my mechanics of material class in my junior year, we were asked to take an existing design for a torque wrench and redesign it. The requirements were that under a lod of 600 in-lbf:
 •	achieve a safety factor of Xo = 4 for yield or brittle failure 
 •	achieve a safety factor of XK = 2 for crack growth from an assumed crack of depth 0.04 inches (1 mm).
 •	achieve a safety factor of XS = 1.5 for fatigue stress
