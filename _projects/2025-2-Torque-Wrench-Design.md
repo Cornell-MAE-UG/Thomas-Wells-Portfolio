@@ -7,10 +7,15 @@ image: /assets/images/Torque Wrench/Redesigned_Deflection.png
 ---
 
 As the culmination of my mechanics of material class in my junior year, we were asked to take an existing design for a torque wrench and redesign it. The requirements were that under a lod of 600 in-lbf:
+
 •	achieve a safety factor of Xo = 4 for yield or brittle failure 
+
 •	achieve a safety factor of XK = 2 for crack growth from an assumed crack of depth 0.04 inches (1 mm).
+
 •	achieve a safety factor of XS = 1.5 for fatigue stress
+
 •	attain at least 1.0 mV/V strain gauge output at the rated torque of 600 in-lbf
+
 •	material must be a steel, aluminum or titanium alloy.
 
 To begin, I wrote a MATLAB script to quickly iterate over designs to achieve the design specifications. I wrote it to have two outputs, one section to check the math against a given baseline, and another to determine wheter my redesign met the design specifications. The key change I made from the baseline was defining new geometry for the handle. The baseline had a very simple rectangular handle that would not be very ergonomic to use, so I quickly decided to go with a circular handle.
