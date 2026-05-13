@@ -379,8 +379,8 @@ For the final design, I was in charge of creating the gear train. This involved 
 
 After designing the gears, I moved onto the mounting system. Again, my main limitation was the budget as each 3D printed part cost us $1 as a base rate, and an additional $0.4 for each gram the part weighed. Because of that limitation, I decided to make the mounting piece as small as possible to save on cost, but the final cost per part still reached over $2. Furthermore, my design for the mount was flawed, and was not stiff enough. The main portion of the part is essentially a single canteliver beam, with the gear and wheel mounted on the very edge. This meant that when turning, the mounts tended to bend and cause meshing issues between the gears. To alleviate this issue, I thicked the walls in the model and changed the print settings to prioritize stiffness in the horizontal direction. These changes were successful, and the bot moved reliably.
 
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }}){: .center-image}
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }}){: .center-image}
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }}){: .inline-image-l}
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }}){: .inline-image-le}
 
 <p><strong>Competiton Day </strong></p>
 
