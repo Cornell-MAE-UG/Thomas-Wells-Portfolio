@@ -16,13 +16,13 @@ The first step in and project is to define the objectives, and this short presen
 
 The second miltstone had us drive along a simple course to demonstrate our manuverability. My group achieved this by hard coding durations for each movement command in the bot. It was a simple task that was a good warm-up for the following task.
 
-![Milestone 2]({{ "/assets/images/Mechatronics Bot/Milestone2.png" | relative_url }}){: .inline-image-l}
+![Milestone 2]({{ "/assets/images/Mechatronics Bot/Milestone2.png" | relative_url }}){: .center-image}
 
 <p><strong>Milestone 3: Color Detection </strong></p>
 
 For milestone three, our bot would have to drive on a narrow a blue and yellow track, immediately stop when it hits the other color, turn 180 degrees, drive to the back of the starting color, and stop again.
 
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Milestone3.png" | relative_url }}){: .inline-image-l}
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Milestone3.png" | relative_url }}){: .center-image}
 
 This objective proved to be difficult, but mostly because of an arbitrary limitation we put on ourselves. We thought that we were limited to a single color sensor as our only sensor, when in reality we had the option of adding two additional QTI sensors as well. Nonetheless we were able to complete the task, and the limitation resulted in some creative problem solving on my part in the bot's algorithmn. The code is certainly not pretty, but it compleated the challenge nonetheless. The main area of improvment I could make it breaking up several portions into their own functions. For example the behaviour when the bot hits the black edge is contained entirely within the main loop, when it could be easily moved to its own function to improve readability. 
 
@@ -373,7 +373,16 @@ int main(void)
 
 With the completion of milestone 3, the team was able to quickly complete milestone four on the same day. The objective of the task was to prove that we could collect a minimum of five block. To accomplish this, we made a pair of prototype arms out of cardboard and glued them to the robot frame. The milestone two code was modified so that the bot would simply move forwards and turn right, a behaviour that we kept for the final bot behvaiour with how simple and reliable it proved to be. We were able to quickly demonstrate our cpabilities and move on to designing the competition features themselves.
 
-<p><strong>Competiton Design </strong></p>
+<p><strong>Gear Train Design </strong></p>
 
 For the final design, I was in charge of creating the gear train. This involved making the gears and and method of mounting them to the provided robot frame. My main limitation in this process was the budget, I figured I only had around $15-$20 for the entire prototyping process and final product. A single gear off McMaster is at minimum $5, so if I bought all four gears I needed, I would be over budget already. I decided to then pivot to making my own gears by laser cutting them out of acrylic. This saved a lot of money, as for all four gears I only spent around $9. To make the gears, I used Fusion 360's gear generator add-in, and settled on a 3:1 ratio to maximize speed while minimizing the space the gear train would take up. 
+
+After designing the gears, I moved onto the mounting system. Again, my main limitation was the budget as each 3D printed part cost us $1 as a base rate, and an additional $0.4 for each gram the part weighed. Because of that limitation, I decided to make the mounting piece as small as possible to save on cost, but the final cost per part still reached over $2. Furthermore, my design for the mount was flawed, and was not stiff enough. The main portion of the part is essentially a single canteliver beam, with the gear and wheel mounted on the very edge. This meant that when turning, the mounts tended to bend and cause meshing issues between the gears. To alleviate this issue, I thicked the walls in the model and changed the print settings to prioritize stiffness in the horizontal direction. These changes were successful, and the bot moved reliably.
+
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }}){: .center-image}
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }}){: .center-image}
+
+<p><strong>Competiton Day </strong></p>
+
+On the day of competition, our bot proved to be formidable. The extra speed provided by the gear train allowed us to consistently reach the blocks faster than our oppoents. We managed to top our group with a 4-1-1 record, dropping only the final match due to an electrical failure at the start. This qualified us into the single elimination bracket, where we were knocked out in the sweet sixteen. Overall I am happy with how the gear train design turned out, especially with the limited budget. I would love to revisit this challenge with more resources sometime in the future.
 
