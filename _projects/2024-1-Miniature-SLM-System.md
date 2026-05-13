@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Miniature Selective Laser Melting System
+title: Miniature SLM System
 description: Design and implementation of a SLM 3D Printing System
 technologies: [Fusion 360, MATLAB, CNC Machining, 3D Printing]
 image: /assets/images/SLM/Thumbnail.jpg
