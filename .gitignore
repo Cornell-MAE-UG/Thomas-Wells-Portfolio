@@ -32,3 +32,6 @@ Gemfile.lock
 
 # VS Code specific settings
 .vscode/
+
+# Unused media (kept locally, never committed or published)
+assets/_unused/
