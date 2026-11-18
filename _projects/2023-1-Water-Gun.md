@@ -10,9 +10,9 @@ image: /assets/images/Water Gun/New Watergun Front.png
 
 <p><strong>Background </strong></p>
 
-In the fall of my freshman year, I joined the Cornell AutoBoat Project Team, whose goal is to design and manufacture a completely autonomous boat to compete in the annual RoboBoat Competition held by RoboNation. In the competition the vessle has to navigate a challenge course and complete various tasks along the way. I was tasked with redesigned our competition water gun, focusing on implementing a remotely adjustable nozzle. A system already existed when I joined, but the pitch of the nozzle was fixed and had to be manually set on land before the competition run began. This obviously was not ideal and it was my job to improve it.
-
 ![Old WG]({{ "/assets/images/Water Gun/Old Water Gun.png" | relative_url }}){: .inline-image-l}
+
+In the fall of my freshman year, I joined the Cornell AutoBoat Project Team, whose goal is to design and manufacture a completely autonomous boat to compete in the annual RoboBoat Competition held by RoboNation. In the competition the vessle has to navigate a challenge course and complete various tasks along the way. I was tasked with redesigned our competition water gun, focusing on implementing a remotely adjustable nozzle. A system already existed when I joined, but the pitch of the nozzle was fixed and had to be manually set on land before the competition run began. This obviously was not ideal and it was my job to improve it.
 
 <p><strong>Design Requirements & Key Challenges </strong></p>
 
@@ -28,23 +28,23 @@ That lack of direction really shows in the first two iterations, the designs are
 
 It was after a design review where I was asked what everything did and couldn't really answer that I realized my mistakes, and started to redesign.
 
-![WG v1]({{ "/assets/images/Water Gun/Redesign v1.png" | relative_url }}){: .inline-image-r}
-
-![WG v2]({{ "/assets/images/Water Gun/Redesign v2.png" | relative_url }}){: .inline-image-r}
+![WG v1]({{ "/assets/images/Water Gun/Redesign v1.png" | relative_url }})
+![WG v2]({{ "/assets/images/Water Gun/Redesign v2.png" | relative_url }})
+{: .image-row}
 
 <p><strong>Second Iteration </strong></p>
+
+![WG v3]({{ "/assets/images/Water Gun/Watergun Gearbox V3.png" | relative_url }}){: .inline-image-l}
 
 Before I began my redesign I took some time to evaluate my constraints. With some actual numbers I was able to determine that a common hobby servo was both strong and fast enough to do everything I wanted to. This allowed me to massively simplify my design by completely removing the gear train and as a bonus, rotate the nozzle inline with the axle. The waterproofing greatly benefitted from the reduction in complexity, with the main ring becoming one continuous loop instead of several discontinuous segments. The nozzle was now fully realized, and the first version of the deck mount appears.
 
 This is obviously a massive improvement over the prior designs, but there are still quite a few issues. Primarily, the waterproofing had improved but was still flawed, I also hadn't considered that the nozzle rotating would intersect with the boat deck.
 
-![WG v3]({{ "/assets/images/Water Gun/Watergun Gearbox V3.png" | relative_url }}){: .inline-image-l}
-
 <p><strong>Final Iteration </strong></p>
 
-With the final version, I flipped the orientation of the enclosure so that it would be positioned vertically, this gives the nozzle enough clearance to rotate freely. The completed deck mount uses four ball nosed spring plungers to secure the motor enclosure, aided by a set of dovetails. The biggest change was the interior, the servo is not longer mounted by screws, but instead pressed into four cylindrical extrusions and held in place by a wedge. This eliminates the four exterior screw holes, simplifying waterproofing. 
-
 ![WG Final]({{ "/assets/images/Water Gun/New Watergun Front.png" | relative_url }}){: .inline-image-l}
+
+With the final version, I flipped the orientation of the enclosure so that it would be positioned vertically, this gives the nozzle enough clearance to rotate freely. The completed deck mount uses four ball nosed spring plungers to secure the motor enclosure, aided by a set of dovetails. The biggest change was the interior, the servo is not longer mounted by screws, but instead pressed into four cylindrical extrusions and held in place by a wedge. This eliminates the four exterior screw holes, simplifying waterproofing. 
 
 
 <p><strong>Waterproofing </strong></p>
@@ -55,8 +55,9 @@ The lid compresses a cut to length rod of buna n rubber inside a channel set int
 
 The axle originally used a press-fit rotary seal, but it leaked as it did not interface well with the rough FDM printed surface. Instead it is now a custom rotary seal using a 14mm O-ring.
 
-![Waterproofing Top]({{ "/assets/images/Water Gun/Waterprooding Top View.png" | relative_url }}){: .inline-image-l}
-![Waterproofing Side]({{ "/assets/images/Water Gun/Waterproofing Side View.png" | relative_url }}){: .inline-image-r}
+![Waterproofing Top]({{ "/assets/images/Water Gun/Waterprooding Top View.png" | relative_url }})
+![Waterproofing Side]({{ "/assets/images/Water Gun/Waterproofing Side View.png" | relative_url }})
+{: .image-row}
 
 <p><strong>Nozzle Mount FEA </strong></p>
 

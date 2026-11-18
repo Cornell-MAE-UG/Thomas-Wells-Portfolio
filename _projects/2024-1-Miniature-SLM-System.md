@@ -20,9 +20,9 @@ This section provides a comprehensive description of the mechanical and electric
 
 <p><strong>Substrate Design </strong></p>
 
-The substrate (Fig 1 (1)) very closely resembles the form factor that has been used in the lab in the past with a could design changes. The overall length of the substrate has been reduced from 50mm to 40mm. This is a significant decrease in length but is necessary to ensure that the glassy carbon clamps (Fig 4 (8)) do not exert any force on the substrate. The profile of the substrate has also been altered from a blank face to having three dovetail cutouts. These are necessary to interface with the new substrate mount (Fig 1 (2)), which when inserted into the substrate chassis (Fig 1 (3)) gives the substrate enough height to pass through the glassy carbon mount and reach the beam region. There are two substrate thicknesses, 0.3mm and 1mm.
-
 ![SLM Fig 1]({{ "/assets/images/SLM/Fig 1 Marked.jpg" | relative_url }}){: .inline-image-l}
+
+The substrate (Fig 1 (1)) very closely resembles the form factor that has been used in the lab in the past with a could design changes. The overall length of the substrate has been reduced from 50mm to 40mm. This is a significant decrease in length but is necessary to ensure that the glassy carbon clamps (Fig 4 (8)) do not exert any force on the substrate. The profile of the substrate has also been altered from a blank face to having three dovetail cutouts. These are necessary to interface with the new substrate mount (Fig 1 (2)), which when inserted into the substrate chassis (Fig 1 (3)) gives the substrate enough height to pass through the glassy carbon mount and reach the beam region. There are two substrate thicknesses, 0.3mm and 1mm.
 
 <p><strong>Substrate Chassis </strong></p>
 
@@ -30,29 +30,29 @@ The substrate chassis (Fig 1 (3), Fig 2 (3)) serves as the carriage for the subs
 
 Two constant-force strip springs (Fig 1 (4)) are attached at the ends of the substrate chassis and connect to the piezo mount (Fig 2 (6)). These springs provide a constant force on the substrate chassis in the -z direction, ensuring that it already remains in contact with the head of the piezo motor.
 
-![SLM Fig 2]({{ "/assets/images/SLM/Fig 2 Marked.jpg" | relative_url }}){: .inline-image-r}
-
 Four metal dowels (Fig 2 (5)) provide a guide for the vertical motion of the substrate chassis, keeping the substrate level throughout its motion. However, this is not achieved with the current version, the dowels are misaligned and do not ensure a perfectly vertical motion. Figure 3 depicts an issue that was commonly seen in the earliest stages of testing, where the substrate chassis would tilt and get caught during its motion. This has been temporarily resolved by thickening the dowels with masking tape as seen in Figure 2. This has significantly increased the friction experienced by the substrate chassis but has temporarily resolved any tilting issues. I want to emphasize that this is a temporary solution, and a more permanent solution should be investigated. Some possibilities include custom machined dowels, or dowels thickened with epoxy.
 
-![SLM Fig 3]({{ "/assets/images/SLM/Fig 3 Marked.jpg" | relative_url }}){: .inline-image-r}
+![SLM Fig 2]({{ "/assets/images/SLM/Fig 2 Marked.jpg" | relative_url }})
+![SLM Fig 3]({{ "/assets/images/SLM/Fig 3 Marked.jpg" | relative_url }})
+{: .image-row}
 
 <p><strong>Glassy Carbon Mount </strong></p>
 
 The glassy carbon mount (Fig 4 (7)) serves as the structure that secures the walls of the powder bed. It rests on top of the piezo mount (Fig 5 (6)), slotting into four dowel pins that secure it in place. These walls must be permeable by X-rays and remain fixed without imparting any force on the substrate. Two strips of glassy carbon (Fig 4 (11)) form these walls, each precisely 3mm tall and 50mm long. 
 
-![SLM Fig 4]({{ "/assets/images/SLM/Fig 4 Marked.jpg" | relative_url }}){: .inline-image-l}
-
 Each strip of glassy carbon rests on the lip of a small clamp (Fig 4 (8)) machined out of stainless steel, each clamp is then manually positioned and secured by a wing nut (Not pictured) in a position that squeezes the piece of glassy carbon on a central stopper (Fig 4 (9), Fig 5 (9)). This process is very cumbersome to perform, as keeping the strips of glassy carbon pressed against the stopper without breaking is a delicate procedure. A spring-loaded system was experimented with and showed promise but requires a more thorough investigation before any mechanism is implemented.
 
-![SLM Fig 5]({{ "/assets/images/SLM/Fig 5 Marked.jpg" | relative_url }}){: .inline-image-l}
+![SLM Fig 4]({{ "/assets/images/SLM/Fig 4 Marked.jpg" | relative_url }})
+![SLM Fig 5]({{ "/assets/images/SLM/Fig 5 Marked.jpg" | relative_url }})
+{: .image-row}
 
 <p><strong>Powder Bed Receptable </strong></p>
+
+![SLM Fig 6]({{ "/assets/images/SLM/Fig 6 Marked.jpg" | relative_url }}){: .inline-image-r}
 
 As discussed, the region for the powder bed is formed by the two strips of glassy carbon sandwiching the slightly shorter substrate. The strips of glassy carbon are pressed against two stoppers. The width of the central stoppers is slightly wider than the matching substrate, ideally ~0.4mm for the 0.3mm substrate and ~1.1mm for the 1mm substrate. This ensures that no horizontal force is put on the substrate that may inhibit its vertical movement, while still being tight enough that a powder bed can be formed on top of the substrate. However, this has not been consistent during testing.
 
 The stoppers themselves were cut from a sheet of stock stainless steel of 0.3mm thickness with a pair of shears, with the thicker stopper formed from three layers of stock folded on top of each other. Unfortunately, during the cutting process the material developed a slight curl on the edges and corners, rendering their practical thickness to be closer to 0.6mm. This has resulted in an empty space forming between the substrate and the glassy carbon in some sections, leaving the metal powder free to fall away instead of staying atop the substrate and forming a powder bed. This problem should be relatively easy to solve, as the stoppers just need to be flattened with a hammer until the proper thickness is reached.
-
-![SLM Fig 6]({{ "/assets/images/SLM/Fig 6 Marked.jpg" | relative_url }}){: .inline-image-r}
 
 
 
@@ -69,27 +69,27 @@ The substrate is moved vertically by the piezo motor. The head of the piezo moto
 
 Luckily these are issues that can be mitigated as the range of motion necessary for the system is only within the 0.25-0.5mm range, making any step size inaccuracies relatively easy to compensate for. Successful runs have been conducted where the layer thickness did not vary significantly.
 
-![SLM Fig 7]({{ "/assets/images/SLM/Fig 7 Marked.jpg" | relative_url }}){: .inline-image-l}
-
 <p><strong>Re-coater Gantry </strong></p>
 
 The re-coater mechanism can be described as a miniature version of the horizontal gantry on the Prusa i3 MK3s, a consumer FDM printer. The main structure of the gantry is composed of four 5mm stainless steel shafts cut to lengths of 120mm and 90mm for the horizontal and vertical spans respectively (Fig 7 (15)). 
 
 The shafts are joined by two custom 3D printed mounts (Fig 7 (13) (14)) that fit two linear bearings that guide the vertical motion of the gantry along the z axis. The vertical stage is not actuated by a motor as there is no need for the z height of the re-coater to change during printing. As such the only means of adjusting the z height is to manually loosen the set screw on each mount (Fig 7 (16)). 
 
-![SLM Fig 8]({{ "/assets/images/SLM/Fig 8 Marked.png" | relative_url }}){: .inline-image-l}
+![SLM Fig 7]({{ "/assets/images/SLM/Fig 7 Marked.jpg" | relative_url }})
+![SLM Fig 8]({{ "/assets/images/SLM/Fig 8 Marked.png" | relative_url }})
+{: .image-row}
 
 The y-axis is actuated by a NEMA 14 stepper motor (Fig 7 (17)) that drives a belt system to move the central bearing hub (Fig 7 (12)) and end piece (Fig 7 (18)), a system derived from the Prusa i3 MK3s. The timing belt is tensioned and secured within the bearing hub (Fig 8). It is important that the x-axis remains clear of any obstacles during printing, and any obstructions must only pass by temporarily.
 
 <p><strong>Powder Delivery </strong></p>
 
-The powder delivery is performed by a custom 3d printed end piece that serves as the powder hopper, delivery nozzle, and levelling blade. The process is initiated with the stepper motor moving the bearing hub and attached end piece across the length of the substrate. This first pass deposits a rough powder bed, which is then levelled out with the return pass as the levelling blade removes any excess. This process is then repeated once more to refine the resulting powder bed. 
+![SLM Fig 10]({{ "/assets/images/SLM/Fig 10 Marked.png" | relative_url }}){: .inline-image-r}
 
-![SLM Fig 9]({{ "/assets/images/SLM/Fig 9 Marked.jpg" | relative_url }}){: .inline-image-r}
+The powder delivery is performed by a custom 3d printed end piece that serves as the powder hopper, delivery nozzle, and levelling blade. The process is initiated with the stepper motor moving the bearing hub and attached end piece across the length of the substrate. This first pass deposits a rough powder bed, which is then levelled out with the return pass as the levelling blade removes any excess. This process is then repeated once more to refine the resulting powder bed. 
 
 The powder is stored in a chamber shaped as an inverted cone (Fig 10 (18)) with an interior angle of just over 18.5 degrees, this slope improves the flow of the powder into the nozzle while allowing for increased storage volume. The friction of the powder itself restricts the flowability while in the storage chamber and does not flow without significant agitation. As such the chamber is equipped with two mini vibrating motors (Fig 9 (19)) that are activated during the recoating process to facilitate powder deposition. The total volume of the storage chamber exceeds 550 cubic millimeters, sufficient for well over 15 layers with a 0.3mm print width and 5 layers with a 1mm print width without needing to refill. 
 
-![SLM Fig 10]({{ "/assets/images/SLM/Fig 10 Marked.png" | relative_url }}){: .inline-image-r}
+![SLM Fig 9]({{ "/assets/images/SLM/Fig 9 Marked.jpg" | relative_url }}){: .inline-image-l}
 
 The nozzle itself is a traditional 3d printing brass nozzle (Fig 9 (20)) that is screwed into a heat set insert. This allows for the nozzle to be easily switched, allowing for easy maintenance and little downtime when assembling the system. A 0.4mm nozzle diameter was found to deposit the correct amount of powder for a 0.3mm width substrate, while a 0.6mm diameter was more suitable for a 1mm width substrate. 
 
@@ -99,9 +99,9 @@ The levelling blade (Fig 9 (21)) is fashioned from a plastic razor blade taped t
 
 The entire system rests on a Thorlabs MSB1010/M optical breadboard (Fig 7 (23). Two custom 3D printed stands (Fig 7 (22)) are screwed into the breadboard. Each stand has a slot for one leg of the piezo mount and a slot for a gantry shaft to slide into. Both the piezo mount and gantry shafts merely rest inside these stands, allowing for easy setup and disassembly. Once fully assembled on the breadboard, the entire system can be easily transported and placed inside the argon chamber.
 
-![SLM Fig 11]({{ "/assets/images/SLM/Full Outside Chamber.jpg" | relative_url }}){: .center-image}
-
-![SLM Fig 12]({{ "/assets/images/SLM/Full Inside.jpg" | relative_url }}){: .center-image}
+![SLM Fig 11]({{ "/assets/images/SLM/Full Outside Chamber.jpg" | relative_url }})
+![SLM Fig 12]({{ "/assets/images/SLM/Full Inside.jpg" | relative_url }})
+{: .image-row}
 
 <p><strong>Motor Controllers </strong></p>
 
@@ -141,15 +141,15 @@ The fifth problem is one that I haven’t tackled at all due to the lack of time
 
 <p><strong>Testing and Results </strong></p>
 
+![SLM Fig 14]({{ "/assets/images/SLM/Empty Chamber.jpg" | relative_url }}){: .inline-image-r}
+
 The system was tested on two separate occasions and produced excellent results. The first trial used the 0.3mm substrate and the second trial used the 1mm substrate. On both occasions a powder bed was formed, and multiple layers were able to be printed. The layers were each 4mm long and 5 layers tall, showing that the system is capable of its primary objective of enabling multi-layer printing.
 
 To conduct these tests the height of the beam aligner had to be altered as we were now printing at a significantly higher point compared to previous prints. This also necessitated a small attachment added to the top of the argon chamber to avoid any potential damage to the window as the power density of the beam had changed as shown in figure 12. 
 
-![SLM Fig 14]({{ "/assets/images/SLM/Empty Chamber.jpg" | relative_url }}){: .inline-image-r}
+![SLM Fig 15]({{ "/assets/images/SLM/Printed Samples.jpg" | relative_url }}){: .inline-image-l}
 
 Nonetheless two successful trials were conducted, the results of which are shown in figure 13. The 0.3mm substrate trial is on the top and the 1mm substrate trial is on the bottom. Both trials produced multiple instances of successful multi-layer printing. The 1mm thickness trials were more successful as it was easier to align the laser to the center of the substrate. Each segment is 4mm long, the laser was operated at 25% power with a 40mm/s laser travel speed.
-
-![SLM Fig 15]({{ "/assets/images/SLM/Printed Samples.jpg" | relative_url }}){: .inline-image-r}
 
 Both trials, however, showed that there is a lot of room for improvement. The melt pools tended to bead together and did not consistently form a continuous line. This was improved by lowering the laser travel speed, although the difference was minimal. What proved to be more important was properly aligning the laser to the substrate. It was exceptionally difficult to do this as the chamber was very loose and rocked with even a little agitation. Along with this is proved to be difficult to see where the trace laser was on the substrate, as most of the system inhibited the view. Using a phone camera to look through the top window proved to be the most effective method of checking the laser alignment, as shown in Figure 14. This should be easier once the chamber is properly secured and level. 
 

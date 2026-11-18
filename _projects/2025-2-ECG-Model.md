@@ -31,7 +31,7 @@ As another exercise and additional deliverable for the class project, I made bod
 
 ![Single Heartbeat]({{ "/assets/images/ECG Model/Frequency_Response.png" | relative_url }}){: .center-image}
 
-```python
+```matlab
     % Model for ECG Generation based on Transfer Functions
     % Based on Equations (12) and (13) from Omar et al. doi:10.3390/biomimetics9050300
 

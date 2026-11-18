@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# Project order and visibility
+#
+# Each entry is a project's filename in _projects/, without ".md".
+# Edits here show up immediately in the local preview (no restart needed).
+# ---------------------------------------------------------------------------
+
+# Projects appear on the Projects page, the homepage ("Selected work" shows the
+# first 3), and the Previous/Next links in this order, top to bottom.
+# A project that isn't listed here still appears, after the listed ones.
+order:
+  - 2024-1-Miniature-SLM-System
+  - 2025-2-Torque-Wrench-Design
+  - 2026-1-Mechatronics-Comp-Bot
+  - 2023-1-Water-Gun
+  - 2025-2-ECG-Model
+
+# Projects listed here are taken off the live site: they are removed from every
+# list, and their own page shows a short "being updated" notice instead of the
+# write-up. In the local preview the full page is still viewable at
+# /projects/<filename>/ (with a banner) so you can keep working on it.
+# Uncomment a line, or add one, to hide a project.
+hidden:
+  - 2025-2-Accordion-CAD
+  # - 2025-2-ECG-Model

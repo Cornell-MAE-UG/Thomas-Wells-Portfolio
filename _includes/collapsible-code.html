@@ -1,0 +1,19 @@
+{%- comment -%}
+  Wraps each highlighted code block (a ```language fence in Markdown) in a
+  collapsible dark box. Usage: {% include collapsible-code.html content=content %}
+{%- endcomment -%}
+{%- assign parts = include.content | split: '<div class="language-' -%}
+{{ parts.first }}
+{%- for part in parts offset:1 -%}
+  {%- assign lang = part | split: ' ' | first -%}
+  {%- assign code = part | split: '</code></pre>' | first | strip -%}
+  {%- assign lines = code | newline_to_br | split: '<br />' | size -%}
+<details class="code-block">
+  <summary>
+    <i class="bi bi-chevron-right"></i>
+    <span class="code-lang">{% case lang %}{% when 'matlab' %}MATLAB{% when 'cpp' %}C++{% when 'python' %}Python{% when 'javascript' %}JavaScript{% else %}{{ lang | capitalize }}{% endcase %}</span>
+    <span class="code-lines">{{ lines }} lines</span>
+    <span class="code-toggle"><span class="when-closed">Show code</span><span class="when-open">Hide code</span></span>
+  </summary>
+<div class="language-{{ part | replace_first: '</code></pre></div></div>', '</code></pre></div></div></details>' }}
+{%- endfor -%}

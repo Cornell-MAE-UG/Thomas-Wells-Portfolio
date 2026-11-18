@@ -1,0 +1,21 @@
+{%- comment -%}
+  Sets `ordered_projects`: site.projects arranged by _data/projects.yml
+  (projects in `order` first, then any unlisted ones), excluding `hidden`.
+  Usage: {% include ordered-projects.html %} then loop over ordered_projects.
+{%- endcomment -%}
+{%- assign _po_order = site.data.projects.order -%}
+{%- assign _po_hidden = site.data.projects.hidden -%}
+{%- assign ordered_projects = "" | split: "" -%}
+{%- for _po_name in _po_order -%}
+  {%- assign _po_match = site.projects | where: "slug", _po_name | first -%}
+  {%- if _po_match -%}
+    {%- unless _po_hidden contains _po_name -%}
+      {%- assign ordered_projects = ordered_projects | push: _po_match -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- for _po_project in site.projects -%}
+  {%- unless _po_order contains _po_project.slug or _po_hidden contains _po_project.slug -%}
+    {%- assign ordered_projects = ordered_projects | push: _po_project -%}
+  {%- endunless -%}
+{%- endfor -%}

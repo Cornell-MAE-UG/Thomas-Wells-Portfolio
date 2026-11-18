@@ -10,14 +10,16 @@
 locale                   : "en-US"
 title                    : Thomas Wells
 title_separator          : "-"
-subtitle                 : "testing 1 2 3" # site tagline that appears below site title in masthead
+subtitle                 : "Mechanical design, rapid prototyping, and high-precision mechatronics." # tagline shown in the homepage hero
 name                     : Thomas Wells
-description              : Thomas Wells - Projects and CV 
-baseurl                  : "Thomas-Wells-Portfolio" # Set this to your repo name 
+description              : Thomas Wells - Projects and CV
+baseurl                  : "/Thomas-Wells-Portfolio" # Set this to your repo name (keep the leading slash)
+# Optional footer links — uncomment and fill in to show them
+# email                  : you@example.com
+# linkedin               : https://www.linkedin.com/in/your-profile
 
 # Theme and Style
 theme: jekyll-theme-minimal
-color_scheme: light # light/default, dark, or aqua
 
 sass:
   style: compressed

@@ -26,7 +26,7 @@ For milestone three, our bot would have to drive on a narrow a blue and yellow t
 
 This objective proved to be difficult, but mostly because of an arbitrary limitation we put on ourselves. We thought that we were limited to a single color sensor as our only sensor, when in reality we had the option of adding two additional QTI sensors as well. Nonetheless we were able to complete the task, and the limitation resulted in some creative problem solving on my part in the bot's algorithmn. The code is certainly not pretty, but it compleated the challenge nonetheless. The main area of improvment I could make it breaking up several portions into their own functions. For example the behaviour when the bot hits the black edge is contained entirely within the main loop, when it could be easily moved to its own function to improve readability. 
 
-```C++
+```cpp
 //output: pin 3
 //s3:ground
 //s2:ground
@@ -375,8 +375,9 @@ With the completion of milestone 3, the team was able to quickly complete milest
 
 <p><strong>Gear Train Design </strong></p>
 
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }}){: .inline-image-l}
-![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }}){: .inline-image-l}
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Mount.png" | relative_url }})
+![Milestone 3]({{ "/assets/images/Mechatronics Bot/Gear Train.png" | relative_url }})
+{: .image-row}
 
 For the final design, I was in charge of creating the gear train. This involved making the gears and and method of mounting them to the provided robot frame. My main limitation in this process was the budget, I figured I only had around $15-$20 for the entire prototyping process and final product. A single gear off McMaster is at minimum $5, so if I bought all four gears I needed, I would be over budget already. I decided to then pivot to making my own gears by laser cutting them out of acrylic. This saved a lot of money, as for all four gears I only spent around $9. To make the gears, I used Fusion 360's gear generator add-in, and settled on a 3:1 ratio to maximize speed while minimizing the space the gear train would take up. 
 

@@ -2,10 +2,11 @@
 layout: default
 title: Thomas Wells - Curriculum Vitae
 permalink: /cv/
+main_class: wrap prose cv
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
+[<i class="bi bi-download"></i> Download PDF]({{ "/assets/CV.pdf" | relative_url }}){: .btn .btn-accent}
 
 
 **Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890

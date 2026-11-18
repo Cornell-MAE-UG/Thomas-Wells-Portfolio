@@ -1,15 +1,77 @@
 ---
 layout: default
 ---
+{%- assign is_hidden = false -%}
+{%- if site.data.projects.hidden contains page.slug -%}{%- assign is_hidden = true -%}{%- endif -%}
 
-<h1>{{ page.title }}</h1>
+{%- if is_hidden and jekyll.environment == "production" -%}
+<article class="project">
+  <div class="wrap prose article project-header project-unavailable">
+    <a href="{{ "/projects/" | relative_url }}" class="back-arrow">
+      <i class="bi bi-arrow-left"></i> All projects
+    </a>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">This project is being updated and will be back soon. In the meantime, take a look at my other projects.</p>
+    <a class="btn btn-accent" href="{{ "/projects/" | relative_url }}">View projects <i class="bi bi-arrow-right"></i></a>
+  </div>
+</article>
+{%- else -%}
+{%- comment -%} Previous/Next follow the order in _data/projects.yml {%- endcomment -%}
+{%- include ordered-projects.html -%}
+{%- assign idx = nil -%}
+{%- for p in ordered_projects -%}
+  {%- if p.url == page.url -%}{%- assign idx = forloop.index0 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign prev_project = nil -%}
+{%- assign next_project = nil -%}
+{%- if idx != nil -%}
+  {%- if idx > 0 -%}{%- assign prev_idx = idx | minus: 1 -%}{%- assign prev_project = ordered_projects[prev_idx] -%}{%- endif -%}
+  {%- assign next_idx = idx | plus: 1 -%}
+  {%- assign next_project = ordered_projects[next_idx] -%}
+{%- endif -%}
 
-<p><img src="{{ page.image | relative_url }}" alt="{{ page.imagealt }}" class="project-image" /></p>
+<article class="project">
+  {% if is_hidden %}
+  <div class="wrap prose article">
+    <div class="hidden-banner">
+      <i class="bi bi-eye-slash"></i>
+      <span><strong>Hidden.</strong> This project isn't shown on the live site. Remove it from <code>hidden</code> in <code>_data/projects.yml</code> to publish it.</span>
+    </div>
+  </div>
+  {% endif %}
 
-{{ content }}
+  <header class="wrap prose article project-header">
+    <a href="{{ "/projects/" | relative_url }}" class="back-arrow">
+      <i class="bi bi-arrow-left"></i> All projects
+    </a>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+    {% if page.technologies %}
+    <ul class="tags">{% for t in page.technologies %}<li>{{ t }}</li>{% endfor %}</ul>
+    {% endif %}
+  </header>
 
-<p><strong>Technologies Used</strong>: {{ page.technologies | join: ", " }}</p>
+  {% if page.image %}
+  <div class="wrap prose article">
+    <figure class="project-hero">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.imagealt | default: page.title }}" />
+    </figure>
+  </div>
+  {% endif %}
 
-<a href={{ "/projects/" | relative_url }} class="back-arrow">
-    <i class="bi bi-arrow-left-circle-fill"></i> Back to Projects
-</a>
+  <div class="wrap prose article project-body">
+    {% include collapsible-code.html content=content %}
+
+    {% if prev_project or next_project %}
+    <nav class="project-nav">
+      {% if prev_project %}
+      <a class="prev" href="{{ prev_project.url | relative_url }}"><span>&larr; Previous</span>{{ prev_project.title }}</a>
+      {% endif %}
+      {% if next_project %}
+      <a class="next" href="{{ next_project.url | relative_url }}"><span>Next &rarr;</span>{{ next_project.title }}</a>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </div>
+</article>
+{%- endif -%}

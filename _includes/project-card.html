@@ -1,0 +1,9 @@
+{%- assign p = include.project -%}
+<a class="project-card" href="{{ p.url | relative_url }}">
+  <div class="project-card-media"><img src="{{ p.image | relative_url }}" alt="{{ p.title }}" loading="lazy"></div>
+  <div class="project-card-body">
+    <h3>{{ p.title }}</h3>
+    {%- if p.description %}<p>{{ p.description }}</p>{% endif -%}
+    {%- if p.technologies %}<ul class="tags">{% for t in p.technologies %}<li>{{ t }}</li>{% endfor %}</ul>{% endif -%}
+  </div>
+</a>
